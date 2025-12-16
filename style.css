@@ -1,0 +1,166 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    height: 100vh;
+    width: screen;
+    /* background: rgb(0, 3, 29); */
+    background: black;
+    padding: 0.5rem;
+
+}
+
+.title {
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.navButtons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: fit-content;
+    gap: 0.1rem;
+
+}
+
+.navButtons button {
+    padding: 0.8rem;
+    border: none;
+    /* background-color: rgb(1, 5, 46); */
+    background-color: rgb(37, 37, 37);
+    color: #fff;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+    font-weight: bold;
+
+}
+
+.navButtons button:focus {
+
+    background-color: orange;
+    color: black;
+
+}
+
+.navButtons a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.FromCurrencyAndAmount,
+.toCurrencyAndAmount {
+    /* background-color: red; */
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 20% auto;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+
+}
+
+select {
+    padding: 2rem 1rem;
+    outline: none;
+    border-radius: 0.5rem;
+    background-color: rgb(37, 37, 37);
+    border: 1px solid orange;
+    color: orange;
+
+
+
+}
+
+#currency input {
+    padding: 2rem;
+    outline: none;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: rgb(37, 37, 37);
+    font-size: 1.5rem;
+    color: orange;
+
+}
+
+
+#result {
+    padding: 2rem;
+    outline: none;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: orange;
+    font-size: 1.5rem;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    
+}
+
+.buttons button, input {
+    color: white;
+    padding: 1.2rem ;
+    font-size: 1.2rem;
+    background-color: rgb(37, 37, 37);
+    border: none;
+    
+}
+
+
+.buttons button:focus, input:focus {
+    color: rgb(37, 37, 37);
+    background-color: orange;
+        
+}
+
+
+/* --------------------Styling the Calculator----------------- */
+.calculatorDisplay{
+    /* background-color: red; */
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    /* grid-template-columns: 20% auto; */
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.display{
+    width: full;
+    height: 4.5rem;
+    background: greenyellow;
+}
+
+.functionKeys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+}
+
+.calculatorButtons{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1px;
+}
+
+
+.numberButtons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+}

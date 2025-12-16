@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConvertCalc</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- title section -->
+        <div class="title">
+            <h3>Currency Converter</h3>
+        </div>
+
+        <!-- navigation Section -->
+        <div class="navButtons">
+            <button class="converter" onclick=""> <a href="index.html">Converter</a></button>
+            <button class="calculator" onclick=""><a href="calculatorIndex.html">Calculator</a></button>
+        </div>
+
+
+        <!-- display Section -->
+        <form action="" id="converter-form">
+
+
+
+
+            <!-- currency listing Section -->
+            <div id="currency">
+
+                <!-- from-currency Section -->
+                <div class="FromCurrencyAndAmount">
+
+                    <select name="" id="from-currency">
+                        <option value="#">From </option>
+                        <option value="USD">USD</option>
+                        <option value="GBP">GBP</option>
+                        <option value="NGN">NGN</option>
+                    </select>
+
+                    <input type="text" id="amount" placeholder="Amount" required>
+
+                </div>
+
+
+                <!-- to-currency Section -->
+                <div class="toCurrencyAndAmount">
+
+                    <select name="" id="to-currency">
+                        <option value="#">To Curr.</option>
+                        <option value="USD">USD</option>
+                        <option value="GBP">GBP</option>
+                        <option value="NGN">NGN</option>
+                    </select>
+
+                    <!-- convertion display -->
+                    <div id="result"></div>
+                </div>
+
+            </div>
+
+
+            <!-- number Button Section -->
+            <div class="buttons">
+
+                <input type="button" value="AC" onclick="clearDisplay()">
+
+                <!-- The only button element to perform  convertion -->
+                <button onclick="appendCharacter('')" type="submit">Convert</button>
+
+
+                <input type="button" value="DEL" onclick="deleteLast()">
+
+
+                <input type="button" value="1" onclick="appendCharacter('1')">
+                <input type="button" value="2" onclick="appendCharacter('2')">
+                <input type="button" value="3" onclick="appendCharacter('3')">
+
+                <input type="button" value="4" onclick="appendCharacter('4')">
+                <input type="button" value="5" onclick="appendCharacter('5')">
+                <input type="button" value="6" onclick="appendCharacter('6')">
+
+                <input type="button" value="7" onclick="appendCharacter('7')">
+                <input type="button" value="8" onclick="appendCharacter('8')">
+                <input type="button" value="9" onclick="appendCharacter('9')">
+
+                <input type="button" value="." onclick="appendCharacter('.')">
+                <input type="button" value="0" onclick="appendCharacter('0')">
+                <input type="button" value="00" onclick="appendCharacter('00')">
+
+
+            </div>
+
+        </form>
+
+    </div>
+
+
+
+
+
+    <script src="./converterFunction.js"></script>
+
+</body>
+
+</html>
