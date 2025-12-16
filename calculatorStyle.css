@@ -86,9 +86,7 @@ body {
     
 }
 
-#display{
-   
-}
+
 
 .functionKeys{
     display: grid;
@@ -124,4 +122,9 @@ body {
     color: rgb(37, 37, 37);
     background-color: orange;
         
+}
+
+.equal{
+    background-color: rgb(226, 19, 19);
+    
 }
