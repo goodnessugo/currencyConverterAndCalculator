@@ -71,7 +71,7 @@ body {
 }
 
 .calculatorDisplay #display{
-    width: full;
+    width: 92%;
     height: 5.5rem;
     background: rgb(129, 214, 0);
     color: black;
